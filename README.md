@@ -11,25 +11,25 @@ Shainy - это проект для поиска людей для какого 
 
 ## Доступные эндпоинты:
 * `api/auth/users/` 
-Регистрация
+Регистрация.
 POST-запрос. Параметры: email, username, password 
 * `auth/token/login/`
-Получение токена
+Получение токена.
 POST-запрос. Параметры: username, password. В ответ приходит токен
 * `api/posts/all/` 
 Просмотр всех постов
 GET-запрос 
 * `api/posts/add/`
-Добавление нового поста
+Добавление нового поста.
 POST-запрос. Параметры: activity, description
 * `api/responses/my/`
-Отклики на мои посты
+Отклики на мои посты.
 GET-запрос
 * `api/responses/match/<int:resp_id>/`
-Ответ на отклик
-GET-запрос
+Ответ на отклик.
+GET-запрос.
 В resp_id - id модели ResponseModel
 * `api/responses/<post_id>/`
-Отклик на пост
+Отклик на пост.
 POST-запрос
 
